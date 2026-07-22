@@ -218,19 +218,3 @@ Include screenshots of the following pages in the `screenshots/` folder:
 B.Tech – Computer Science & Engineering
 
 Frontend & Full-Stack Web Developer
-
-GitHub: https://github.com/yourusername
-
-LinkedIn: https://linkedin.com/in/yourprofile
-
----
-
-## 📄 License
-
-This project is developed for educational and academic purposes as a **Final Year Project**.
-
----
-
-## ⭐ Support
-
-If you found this project useful, please consider giving it a **⭐ Star** on GitHub. It helps others discover the project and motivates further improvements.
