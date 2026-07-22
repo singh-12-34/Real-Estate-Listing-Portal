@@ -1,67 +1,73 @@
 # 🏡 Real Estate Listing Portal
 
-A full-stack **Real Estate Listing Portal** that allows users to browse, search, and inquire about properties. The platform provides advanced search filters, interactive maps, property image galleries, and an easy-to-use enquiry system. It is designed to simplify the property search process for buyers, sellers, and real estate agents.
+A modern and responsive **Real Estate Listing Portal** built using the **MERN Stack**. This application allows users to search, explore, and inquire about residential and commercial properties. The portal provides advanced search filters, interactive Google Maps integration, property image galleries, and a secure enquiry system, making the property search process simple and efficient.
 
-> 🎓 **Final Year Project** – Bachelor of Technology (Computer Science & Engineering)
-
----
-
-## 📖 Project Overview
-
-The Real Estate Listing Portal is a web application that enables users to discover residential and commercial properties based on their preferences. Users can search properties by location, price, and property type, view detailed property information with images, locate properties on Google Maps, and submit enquiries directly to property owners or agents.
+> 🎓 **Final Year Project** – Bachelor of Technology (Information Technology)
 
 ---
 
-## ✨ Features
+# 📖 Project Overview
 
-### 👤 User Features
+The Real Estate Listing Portal is a full-stack web application developed to streamline the process of buying, selling, and renting properties. Users can browse available properties, search by location, price, or property type, view property details with multiple images, locate properties using Google Maps, and send enquiries directly to property owners or agents.
+
+The system also provides an admin dashboard where administrators can manage property listings, update property information, and view customer enquiries.
+
+---
+
+# ✨ Features
+
+## 👤 User Module
 
 * User Registration & Login
 * Browse Property Listings
 * Search Properties by Location
-* Filter by Price Range
-* Filter by Property Type
-* View Property Details
+* Filter Properties by Price
+* Filter Properties by Property Type
+* View Complete Property Details
 * Property Image Gallery
 * Google Maps Integration
-* Submit Property Enquiries
-* Responsive Design for Mobile & Desktop
-
-### 🛠️ Admin Features
-
-* Admin Login
-* Add New Property Listings
-* Edit Existing Properties
-* Delete Properties
-* Manage Property Images
-* View Customer Enquiries
-* Dashboard for Property Management
+* Contact Property Owner
+* Submit Enquiry Form
+* Mobile Responsive Design
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Admin Module
 
-### Frontend
+* Secure Admin Login
+* Add New Property
+* Update Property Details
+* Delete Property Listings
+* Manage Property Images
+* View Customer Enquiries
+* Dashboard Overview
+
+---
+
+# 💻 Tech Stack
+
+## Frontend
 
 * React.js
 * HTML5
 * CSS3
-* JavaScript (ES6+)
+* JavaScript (ES6)
+* Bootstrap / Tailwind CSS
 
-### Backend
+## Backend
 
 * Node.js
 * Express.js
 
-### Database
+## Database
 
 * MongoDB
 
-### APIs & Services
+## APIs
 
 * Google Maps API
 
-### Development Tools
+## Development Tools
 
 * Git
 * GitHub
@@ -70,7 +76,7 @@ The Real Estate Listing Portal is a web application that enables users to discov
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 real-estate-listing-portal/
@@ -78,143 +84,188 @@ real-estate-listing-portal/
 ├── client/
 │   ├── public/
 │   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── assets/
+│   │   └── App.js
 │   └── package.json
 │
 ├── server/
+│   ├── config/
 │   ├── controllers/
+│   ├── middleware/
 │   ├── models/
 │   ├── routes/
-│   ├── middleware/
-│   ├── config/
-│   └── server.js
+│   ├── uploads/
+│   ├── server.js
+│   └── package.json
 │
 ├── screenshots/
 ├── README.md
-└── package.json
+├── package.json
+└── .gitignore
 ```
 
 ---
 
-## 🚀 Installation
+# ⚙ Installation
 
-### Clone the Repository
+## Step 1: Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/real-estate-listing-portal.git
 ```
 
-### Navigate to the Project
+## Step 2: Open the Project
 
 ```bash
 cd real-estate-listing-portal
 ```
 
-### Install Frontend Dependencies
+## Step 3: Install Frontend Dependencies
 
 ```bash
 cd client
 npm install
 ```
 
-### Install Backend Dependencies
+## Step 4: Install Backend Dependencies
 
 ```bash
 cd ../server
 npm install
 ```
 
-### Configure Environment Variables
+## Step 5: Configure Environment Variables
 
-Create a `.env` file inside the `server` folder and add:
+Create a **.env** file inside the **server** folder.
 
 ```env
 PORT=5000
+
 MONGODB_URI=your_mongodb_connection_string
+
 JWT_SECRET=your_secret_key
+
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 ```
 
-### Start the Backend
+---
+
+## Step 6: Run Backend
 
 ```bash
 npm run dev
 ```
 
-### Start the Frontend
+---
+
+## Step 7: Run Frontend
 
 ```bash
 cd ../client
 npm start
 ```
 
-The application will run locally at:
+---
 
-* Frontend: `http://localhost:3000`
-* Backend: `http://localhost:5000`
+# 🌐 Application URLs
+
+Frontend
+
+```text
+http://localhost:3000
+```
+
+Backend
+
+```text
+http://localhost:5000
+```
 
 ---
 
-## 📸 Screenshots
+# 📸 Screenshots
 
-Include screenshots of the following pages in the `screenshots/` folder:
+Add screenshots of the following pages inside the **screenshots** folder.
 
 * Home Page
 * Property Listings
+* Search Filters
 * Property Details
-* Search & Filter
 * Google Maps View
 * Login Page
+* Register Page
 * Admin Dashboard
 * Enquiry Form
 
 ---
 
-## 📊 Key Functionalities
+# 🔑 Main Functionalities
 
-* Property Search
-* Advanced Filtering
-* Interactive Google Maps
-* Image Gallery
-* Secure User Authentication
+* User Authentication
 * Property Management
-* Customer Enquiry System
-* Responsive User Interface
+* Property Search
+* Location-Based Search
+* Price Filtering
+* Property Type Filtering
+* Google Maps Integration
+* Image Gallery
+* Customer Enquiry Form
+* Admin Dashboard
+* Responsive Design
 
 ---
 
-## 🔒 Future Enhancements
+# 🎯 Objectives
+
+* Simplify the property buying and renting process.
+* Provide an intuitive and user-friendly interface.
+* Enable efficient property management.
+* Improve communication between buyers and property owners.
+* Deliver a secure and scalable web application.
+
+---
+
+# 🚀 Future Enhancements
 
 * Property Wishlist
+* AI-Based Property Recommendation
+* Mortgage / EMI Calculator
 * Online Property Booking
-* AI-Based Property Recommendations
-* Mortgage/EMI Calculator
+* Live Chat with Property Owners
+* Email Notifications
+* SMS Notifications
 * Property Comparison
-* Chat with Property Owner
-* Email & SMS Notifications
-* Admin Analytics Dashboard
 * Virtual Property Tours
+* Payment Gateway Integration
+* Multi-Language Support
 * Dark Mode
 
 ---
 
-## 📚 Learning Outcomes
+# 📚 Learning Outcomes
 
-* Full-Stack Web Development
-* RESTful API Development
-* MongoDB Database Management
-* React Component Architecture
-* Authentication & Authorization
-* Third-Party API Integration
+During the development of this project, the following concepts were implemented:
+
+* React.js Components
+* REST APIs
 * CRUD Operations
+* Express.js Server
+* MongoDB Database
+* JWT Authentication
+* Google Maps API Integration
 * Responsive Web Design
-* Version Control with Git & GitHub
+* Git & GitHub Version Control
+* Full-Stack MERN Development
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
-**Daksh Gupta**
+**Pranshu Singh**
 
-B.Tech – Computer Science & Engineering
+**B.Tech – Information Technology**
 
-Frontend & Full-Stack Web Developer
+**MERN Full Stack Developer**
